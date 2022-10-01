@@ -1,9 +1,9 @@
-import "./../index.css";
+import "./../../index.css";
 import DcaDate from "./DcaDate";
 
 const DcaItem = (props) => {
   return (
-    <div className="container mx-auto stats stats-vertical lg:stats-horizontal shadow border bg-base-300">
+    <div className="container mx-auto stats stats-vertical lg:stats-horizontal shadow border bg-base-300 mb-8">
       <table>
         <tbody>
           <tr className="stat flex h-38 place-items-center">

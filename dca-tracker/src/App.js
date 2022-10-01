@@ -1,4 +1,6 @@
-import DcaMod from "./components/DcaMod";
+import Card from "./components/UI/Card";
+import DcaMod from "./components/Items/DcaMod";
+import Theme from "./components/UI/Theme";
 import "./index.css";
 
 const App = () => {
@@ -12,10 +14,13 @@ const App = () => {
   ];
 
   return (
-    <div className="container mx-auto ">
+    <div className="container mx-auto min-w-min">
       <h1 className="text-center text-4xl p-6 font-bold">Crypto DCA Tracker</h1>
       <div className="divider"></div>
-      <DcaMod items={dca}></DcaMod>
+      <Card>
+        <DcaMod items={dca}></DcaMod>
+      </Card>
+      <Theme></Theme>
     </div>
   );
 };

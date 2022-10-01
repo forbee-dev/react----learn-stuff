@@ -1,4 +1,4 @@
-import "./../index.css";
+import "./../../index.css";
 
 const DcaDate = (props) => {
   const day = props.date.toLocaleString("en-US", { day: "numeric" });
@@ -6,12 +6,12 @@ const DcaDate = (props) => {
   const year = props.date.toLocaleString("en-US", { year: "numeric" });
 
   return (
-    <div className="shadow border rounded-lg bg-zinc-800 p-2.5">
+    <div className="w-32 h-32 shadow border rounded-lg bg-zinc-800 p-2.5">
       <div className="flex justify-center text-4xl font-bold text-white">
         {day}
       </div>
-      <div className="flex justify-center text-2xl">{month}</div>
-      <div className="flex justify-center text-2xl">{year}</div>
+      <div className="flex justify-center text-2xl  text-white">{month}</div>
+      <div className="flex justify-center text-2xl  text-white">{year}</div>
     </div>
   );
 };
