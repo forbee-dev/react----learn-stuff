@@ -1,8 +1,9 @@
 import DcaItem from "./DcaItem";
+import Card from "../UI/Card";
 
 const DcaMod = (props) => {
   return (
-    <div>
+    <Card className="items">
       <DcaItem
         coin={props.items[0].coin}
         amount={props.items[0].amount}
@@ -18,7 +19,7 @@ const DcaMod = (props) => {
         amount={props.items[0].amount}
         date={props.items[0].date}
       ></DcaItem>
-    </div>
+    </Card>
   );
 };
 
